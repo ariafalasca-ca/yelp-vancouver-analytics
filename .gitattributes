@@ -1,0 +1,2 @@
+# Keep the AI-implemented web extension available without counting it in Languages.
+app/** linguist-detectable=false
