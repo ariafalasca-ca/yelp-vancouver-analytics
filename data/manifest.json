@@ -1,0 +1,42 @@
+{
+  "archive": "yelp-vancouver-data.zip",
+  "parts": [
+    {
+      "file": "yelp-vancouver-data.zip.part01",
+      "bytes": 50331648,
+      "sha256": "9b2e8303d1f024efb4c5963dd64720bf041d78fa41b5860881ba711879bacf93"
+    },
+    {
+      "file": "yelp-vancouver-data.zip.part02",
+      "bytes": 50331648,
+      "sha256": "0f6b68aa35b7fba4c70e2b2602d539c612cc4d1fe36f924328836a2744c0e93e"
+    },
+    {
+      "file": "yelp-vancouver-data.zip.part03",
+      "bytes": 50331648,
+      "sha256": "b00fdb8dc5a04278c76fe2df45c5d17422fb8844e2a964aa6b82c5ff4bf7ff4b"
+    },
+    {
+      "file": "yelp-vancouver-data.zip.part04",
+      "bytes": 18496405,
+      "sha256": "c4645bb3d66b66d5dff9abcab0a8d1b655e1617e9dc3c2c9e3cf868068ea106e"
+    }
+  ],
+  "files": [
+    {
+      "file": "yelp_dataset_vancouver-business.json",
+      "bytes": 13773471,
+      "sha256": "80989f2241d06ecc0769fbe2c8972e86a795959065ffdff5daac703badb3d9ff"
+    },
+    {
+      "file": "yelp_dataset_vancouver-review.json",
+      "bytes": 119572693,
+      "sha256": "375d7959870c38eb900564393b5afb14163472ed1c409be7946c982e194cb7da"
+    },
+    {
+      "file": "yelp_dataset_vancouver-user.json",
+      "bytes": 238201029,
+      "sha256": "6e56b19b39ec912f0f9f8c68c5c065ad123d21cf1e1ed1c7f28f18c7d8563013"
+    }
+  ]
+}

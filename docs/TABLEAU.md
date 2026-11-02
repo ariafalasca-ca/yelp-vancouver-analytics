@@ -3,8 +3,9 @@
 ## Open the dashboards
 
 1. Download and extract the repository.
-2. Open a `.twb` file from `tableau/` in Tableau Desktop.
-3. If prompted for a source, locate the matching course JSON. See [data setup](../data/README.md).
+2. Run `python3 scripts/extract_data.py` to unpack the included source data into `data/`.
+3. Open a `.twb` file from `tableau/` in Tableau Desktop.
+4. If prompted for a source, locate the matching extracted JSON. See [data setup](../data/README.md).
 
 The workbooks contain dashboard definitions, not embedded data. The web extension runs separately from `app/index.html` and needs no raw files.
 

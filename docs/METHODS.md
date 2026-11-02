@@ -31,6 +31,6 @@ Exposure, readership, vote timing, review length, reviewer activity and restaura
 
 ## Reproduction boundary
 
-The app can reproduce its displayed calculations from the shipped aggregates. The AI-authored `scripts/build_data.py` rebuilds and checks these aggregates from authorized local raw JSON, using the explicit scope in `config/scope.json`. `scripts/audit_project.py` verifies headline metrics. Raw files are excluded; see [reproduction instructions](REPRODUCE.md). Tableau still requires the matching authorized raw files and a working installation.
+The app can reproduce its displayed calculations from the shipped aggregates. The AI-authored `scripts/build_data.py` rebuilds and checks these aggregates from authorized local raw JSON, using the explicit scope in `config/scope.json`. `scripts/audit_project.py` verifies headline metrics. The three required JSON files are included in the multipart archive under `data/`; see [reproduction instructions](REPRODUCE.md). Tableau still requires the matching authorized raw files and a working installation.
 
 Reference: [Yelp dataset documentation](https://www.yelp.com/dataset/documentation/main). The course-provided subset, rather than a fresh download of the latest Yelp dataset, is the actual source used here.

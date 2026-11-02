@@ -3,5 +3,8 @@ __pycache__/
 *.pyc
 data/*
 !data/README.md
+!data/manifest.json
 *.zip
 *.twbx
+
+!data/*.zip.part*

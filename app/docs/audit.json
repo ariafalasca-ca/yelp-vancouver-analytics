@@ -31,7 +31,7 @@
       "yelp_dataset_vancouver-review.json": "375d7959870c38eb900564393b5afb14163472ed1c409be7946c982e194cb7da",
       "yelp_dataset_vancouver-review_full.json": "bcb89e32ee96597d3fae4def4b779bac6db0ca938d2d5ebc84e3f67ab353dfb1"
     },
-    "source_directory": "Course-provided Yelp Vancouver JSON (raw files not distributed)",
+    "source_directory": "Included source JSON in the multipart data archive",
     "city_aliases": {
       "vancover": "Vancouver",
       "vancouver bc": "Vancouver",

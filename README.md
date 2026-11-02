@@ -22,7 +22,7 @@ An educational analytics project using historical Yelp data for Metro Vancouver.
 - **[Yelp Reviews](tableau/Yelp%20Reviews.twb):** annual rating distributions, monthly review activity and user-profile contribution patterns.
 - **[The Yelp Drama Economy](app/index.html):** filter reactions by review year, location, star rating and vote type. Download the repository and open `app/index.html` in a browser; it works offline. GitHub's HTML file view shows source code, not the running app.
 
-Tableau Desktop and the matching source data are required for the workbooks. See [Tableau setup and metric definitions](docs/TABLEAU.md).
+Tableau Desktop is required. Download the full repository and run `python3 scripts/extract_data.py` to unpack [the included data](data/README.md), then open either workbook. See [Tableau setup and metric definitions](docs/TABLEAU.md).
 
 ## Visual previews
 
@@ -46,7 +46,7 @@ For the web extension, I selected the analytical question and requirements and d
 
 The course-provided historical subset contains **17,292 businesses, 622,690 reviews and 138,375 users**. The restaurant scope includes **7,501 businesses**; the extension uses **426,719 associated reviews**, from 2005 to January 2021.
 
-Raw JSON, user profiles and review text are not distributed. The app contains aggregate counts and vote-frequency distributions. Readers with an authorized copy of the matching source files can [rebuild the aggregates and audit the findings](docs/REPRODUCE.md). All 837 aggregate groups match the source-data calculations; see [data checks](docs/VALIDATION.md).
+The matching business, review and user JSON files are included in a compressed [four-part data archive](data/README.md), shared with course-instructor permission. Run `python3 scripts/extract_data.py` to use Tableau or [rebuild the aggregates and audit the findings](docs/REPRODUCE.md). The app uses embedded aggregates and works without extracting the archive. All 837 aggregate groups match the source-data calculations; see [data checks](docs/VALIDATION.md).
 
 ## Interpretation and limits
 

@@ -1,15 +1,32 @@
-# Raw data is not included
+# Yelp Vancouver source data
 
-Use an authorized copy of the course-provided Yelp Vancouver subset. A current Yelp Open Dataset download may not contain the same records or geographic coverage.
+The business, review and user JSON files used in this project are included as a **four-part ZIP archive**. The course instructor authorized sharing these course-provided files. Yelp and other source materials remain subject to their original terms; this repository does not grant a separate licence to the dataset.
 
-Place these files here, or use Tableau's source-relinking dialog to locate them:
+## Extract the data
+
+Download the **full repository** using Code → Download ZIP, then extract that download. From the repository root, run:
+
+```sh
+python3 scripts/extract_data.py
+```
+
+The command verifies all archive parts, reconstructs the ZIP and extracts these files into `data/`:
 
 - `yelp_dataset_vancouver-business.json`
 - `yelp_dataset_vancouver-review.json`
 - `yelp_dataset_vancouver-user.json`
 
-Open the workbooks in `../tableau/`. Their connection directories point to `../data`; use the source-relinking dialog if Tableau cannot locate the files.
+Then open a workbook in `tableau/`. If Tableau asks for a source, select the matching extracted JSON. The web app works without extraction.
 
-The web extension requires none of these files. Its aggregate data are embedded in `../app/index.html`.
+## Archive parts
 
-Raw data, user profiles and review text must not be committed here. Yelp and course-source material remain subject to their original terms.
+All four parts are required and are included when the full repository is downloaded:
+
+- [Part 1](yelp-vancouver-data.zip.part01)
+- [Part 2](yelp-vancouver-data.zip.part02)
+- [Part 3](yelp-vancouver-data.zip.part03)
+- [Part 4](yelp-vancouver-data.zip.part04)
+
+The source files occupy approximately 372 MB uncompressed, or 169 MB in the archive. Parts stay below GitHub's per-file upload limit. [manifest.json](manifest.json) records sizes and SHA-256 checksums; extraction verifies each part and preserves the original JSON byte-for-byte. Extracted files remain ignored by Git to avoid duplicate copies.
+
+The additional full-text review table duplicates the review IDs and analytical fields and is not required by either workbook. Tip and check-in tables are outside this project's scope. These extra tables are not included.

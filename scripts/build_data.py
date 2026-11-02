@@ -124,7 +124,7 @@ def build(source, check_full=False):
         audit['full_rows'] = len(seen)
         hashes[path.name] = digest(path)
     meta = dict(audit=dict(audit), restaurants=len(eligible), cities=sorted(set(eligible.values())),
-                files=hashes, source_directory='Course-provided Yelp Vancouver JSON (raw files not distributed)',
+                files=hashes, source_directory='Included source JSON in the multipart data archive',
                 **config)
     summary = []
     for stars in range(1, 6):
